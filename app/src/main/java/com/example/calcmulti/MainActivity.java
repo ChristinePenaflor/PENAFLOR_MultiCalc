@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private DecimalFormat decimalFormat;
     private MaterialButton button0, button1, button2, button3, button4, button5, button6, button7, button8, button9,
             buttonDot, buttonAdd, buttonSub, buttonMultiply, buttonDivide, buttonPercent, buttonClear, buttonOFF, buttonEqual;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -197,7 +198,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void allCalculations(){
+
+    private void allCalculations() {
         if (!Double.isNaN(firstValue)) {
             secondValue = Double.parseDouble(inputDisplay.getText().toString());
             inputDisplay.setText(null);
